@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexGuard Car Strip - Pelindung Bumper Premium | Harga Diskon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Fonts */
+        h1, h2, h3, h4, h5 {
+            font-family: 'Georgia', serif;
+        }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideInRight {
+            from { transform: translateX(20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        .animate-slideInRight {
+            animation: slideInRight 0.5s ease-out;
+        }
+        
+        /* Glassmorphism Effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+            animation: fadeIn 0.4s;
+        }
+        
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            z-index: 1001;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+    <!-- Social Proof Notification -->
+    <div id="socialProof" class="fixed top-6 right-6 z-50 rounded-lg shadow-xl max-w-xs animate-slideInRight hidden">
+        <div class="glass p-4 rounded-lg border-l-4 border-[#c0c0c0] flex items-start gap-3">
+            <div id="customerAvatar" class="bg-gray-200 rounded-full w-10 h-10 flex items-center justify-center text-lg font-bold"></div>
+            <div>
+                <p id="customerMessage" class="text-sm font-medium text-gray-800"></p>
+                <p class="text-xs text-gray-500 mt-1"><span id="customerTime"></span> yang lalu</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+        <video id="lightbox-video" class="lightbox-content" controls></video>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://cdn.orderonline.id/uploads/images_5882961754291926599.png" alt="Logo Toko" class="h-10">
+                <h1 class="ml-3 text-xl font-bold text-black hidden sm:block">FlexGuard Car Strip</h1>
+            </div>
+            
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex gap-6">
+                    <a href="#features" class="text-black hover:text-[#c0c0c0] transition">Produk</a>
+                    <a href="#benefits" class="text-black hover:text-[#c0c0c0] transition">Keunggulan</a>
+                    <a href="#testimonials" class="text-black hover:text-[#c0c0c0] transition">Testimoni</a>
+                    <a href="#howto" class="text-black hover:text-[#c0c0c0] transition">Cara Pakai</a>
+                </div>
+                <button class="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition" onclick="document.getElementById('orderSection').scrollIntoView({behavior: 'smooth'})">PESAN SEKARANG</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-black overflow-hidden">
+        <div class="absolute inset-0 z-10 bg-gradient-to-r from-black to-transparent"></div>
+        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover opacity-60">
+            <source src="https://lvideo.rightinthebox.com/202304/bps/video/inc/sesjaw1680767131883.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="container mx-auto px-4 relative z-20 text-center lg:text-left lg:w-1/2">
+            <div class="max-w-3xl mx-auto lg:mr-0 lg:ml-auto">
+                <div class="mb-6">
+                    <span class="bg-red-600 text-white px-4 py-1 rounded-full text-sm font-bold">HARGA PROMO TERBATAS!</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Lindungi Mobil Anda dengan FlexGuard Car Strip</h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-8">Solusi Anti-Gores Premium untuk Bumper Mobil Anda</p>
+                
+                <div class="flex flex-col items-center lg:items-start gap-6">
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <span class="text-gray-300 line-through">Rp 289.000</span>
+                            <div class="text-3xl font-bold text-white">Rp 159.000</div>
+                        </div>
+                        
+                        <div class="bg-red-600 text-white px-3 py-1 rounded-lg flex items-center text-sm">
+                            <span class="text-2xl">45%</span>
+                            <span>OFF</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <button class="bg-[#c0c0c0] hover:bg-gray-400 transition text-black font-bold px-8 py-3 rounded-full" onclick="document.getElementById('orderSection').scrollIntoView({behavior: 'smooth'})">BELI SEKARANG</button>
+                        <button class="border-2 border-white text-white hover:bg-gray-800 transition px-8 py-3 rounded-full" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">DETAIL PRODUK</button>
+                    </div>
+                    
+                    <div class="flex gap-3 items-center text-gray-300 text-sm mt-4">
+                        <div class="flex items-center gap-1">
+                            <div class="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">✓</div>
+                            <span>Bebas Ongkir</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <div class="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">✓</div>
+                            <span>Garansi 1 Tahun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-black mb-4">Fitur Unggulan FlexGuard</h2>
+                <p class="text-gray-600">Solusi perlindungan bumper mobil terbaik dengan teknologi terkini</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition cursor-pointer glass">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-4">
+                        <div class="text-3xl">🛡️</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-2">Pelindung Goresan</h3>
+                    <p class="text-gray-600">Perlindungan optimal untuk bumper mobil Anda dari goresan dan abrasi saat parkir atau perjalanan.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition cursor-pointer glass">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-4">
+                        <div class="text-3xl">🔧</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-2">Mudah Dipasang</h3>
+                    <p class="text-gray-600">Dilengkapi perekat premium untuk instalasi mudah dan ideal untuk semua jenis mobil.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition cursor-pointer glass">
+                    <div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center mb-4">
+                        <div class="text-3xl">🌀</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-2">Desain Universal</h3>
+                    <p class="text-gray-600">Bahan PVC premium dengan fleksibilitas tinggi, cocok untuk semua model mobil termasuk sedan, SUV, dan MPV.</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Product Images -->
+                        <div>
+                            <img src="https://ouku-cf.rightinthebox.com/images/x/202304/bps/product/inc/dmpify1680605879350.jpg?fmt=webp" alt="FlexGuard Car Strip" class="w-full h-64 object-cover rounded-xl shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        </div>
+                        <div>
+                            <img src="https://ouku-cf.rightinthebox.com/webp_desc_image/202304/bps/desc/inc/fjwxeg1680605896839.jpg?com=1" alt="Installed on car front" class="w-full h-64 object-cover rounded-xl shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        </div>
+                        <div>
+                            <img src="https://ouku-cf.rightinthebox.com/webp_desc_image/202304/bps/desc/inc/rwqbxf1680605888909.jpg?com=1" alt="Protection from scratches" class="w-full h-64 object-cover rounded-xl shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        </div>
+                        <div>
+                            <img src="https://ouku-cf.rightinthebox.com/webp_desc_image/202304/bps/desc/inc/tivzkc1680605880867.jpg?com=1" alt="FlexGuard close-up" class="w-full h-64 object-cover rounded-xl shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-black mb-6">Spesifikasi Teknis</h3>
+                    
+                    <div class="mb-8">
+                        <div class="flex flex-wrap gap-4 mb-6">
+                            <div class="bg-white py-4 px-6 rounded-xl shadow-sm glass">
+                                <p class="text-gray-600">Bahan</p>
+                                <p class="font-bold text-lg">PVC Premium</p>
+                            </div>
+                            <div class="bg-white py-4 px-6 rounded-xl shadow-sm glass">
+                                <p class="text-gray-600">Panjang</p>
+                                <p class="font-bold text-lg">40 cm</p>
+                            </div>
+                            <div class="bg-white py-4 px-6 rounded-xl shadow-sm glass">
+                                <p class="text-gray-600">Paket Isi</p>
+                                <p class="font-bold text-lg">2 Pelindung</p>
+                            </div>
+                        </div>
+                        
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <div class="w-5 h-5 bg-[#c0c0c0] rounded-full flex items-center justify-center text-xs text-white">✓</div>
+                                <span>Desain universal cocok untuk semua mobil</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <div class="w-5 h-5 bg-[#c0c0c0] rounded-full flex items-center justify-center text-xs text-white">✓</div>
+                                <span>Tekstur fleksibel untuk berbagai bentuk bumper</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <div class="w-5 h-5 bg-[#c0c0c0] rounded-full flex items-center justify-center text-xs text-white">✓</div>
+                                <span>Perekat kuat dengan daya tahan hingga 3 tahun</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <div class="w-5 h-5 bg-[#c0c0c0] rounded-full flex items-center justify-center text-xs text-white">✓</div>
+                                <span>Ketahanan terhadap suhu ekstrem (-30°C hingga 80°C)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-4 rounded-xl">
+                        <div class="text-red-600 font-bold text-lg mb-2">Promo Terbatas!</div>
+                        <div class="flex items-end gap-2 mb-2">
+                            <span class="text-gray-500 line-through">Rp 289.000</span>
+                            <span class="text-3xl font-bold text-black">Rp 159.000</span>
+                        </div>
+                        <button class="w-full bg-black text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition mt-4" onclick="document.getElementById('orderSection').scrollIntoView({behavior: 'smooth'})">DAPATKAN PROMO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-black mb-4">Mengapa Memilih FlexGuard?</h2>
+                <p class="text-gray-600">Solusi terlengkap untuk melindungi mobil Anda tanpa ribet</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="flex items-start gap-6">
+                    <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center text-lg">1</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Proteksi Bumper Menyeluruh</h3>
+                        <p class="text-gray-600">Melindungi bumper depan dan belakang mobil secara simultan dengan material kelas premium yang tahan benturan ringan dan menghindari goresan saat parkir.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-6">
+                    <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center text-lg">2</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Instalasi Singkat dan Praktis</h3>
+                        <p class="text-gray-600">Tanpa perlengkapan khusus, cukup tempel pelindung setelah area bumper bersih. Tidak perlu ke bengkel, hemat waktu dan biaya.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-6">
+                    <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center text-lg">3</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Daya Tahan Luar Biasa</h3>
+                        <p class="text-gray-600">Diuji di berbagai kondisi iklim, tahan terhadap cuaca ekstrem, air garam, dan paparan sinar UV terus menerus tanpa kehilangan daya rekat dan fleksibilitas.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-6">
+                    <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center text-lg">4</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Efektif Hemat Biaya</h3>
+                        <p class="text-gray-600">Cegah biaya perbaikan cat dan body mobil yang mahal. Satu kali pemasangan FlexGuard melindungi bumper selama bertahun-tahun.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-black mb-4">Testimoni Pelanggan</h2>
+                <p class="text-gray-600">Apa kata pengguna FlexGuard Car Strip</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 glass">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="https://i.pinimg.com/1200x/f0/aa/f3/f0aaf3e8e05c81caf4ab4ca86e65823e.jpg" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold">Lestari F</h4>
+                            <div class="flex text-yellow-400">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-4">"Produk baik sesuai dengan deskripsi. Belum dipasang, jadi belum tau keefektifan nya."</p>
+                    
+                    <a href="javascript:void(0);" onclick="openVideo('https://down-zl-sg.vod.susercontent.com/api/v4/11110103/mms/id-11110103-6ke1e-ls9taiq5hnw4fc.16000051709118425.mp4')">
+                        <div class="relative">
+                            <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-32">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="text-white bg-black bg-opacity-50 rounded-full p-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 glass">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="https://i.pinimg.com/736x/a7/65/61/a76561b3d89e25666196423cbaf21748.jpg" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold">Vina M</h4>
+                            <div class="flex text-yellow-400">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-4">"Cocok untuk pembatas mobil agar tidak langsung terkena body saat parkir. Menghemat biaya perbaikan bumper."</p>
+                    
+                    <img src="https://down-id.img.susercontent.com/file/id-11134103-7r98y-lvcxejrbe7cz42.webp" class="w-full h-32 object-cover rounded-lg cursor-pointer" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-7r98y-lvcxejrbe7cz42.webp')">
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 glass">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="https://i.pinimg.com/736x/2a/4f/a5/2a4fa5db1928b80870df4411219b108c.jpg" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold">Winda A</h4>
+                            <div class="flex text-yellow-400">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-4">"Stiker pelindung body bemper mobil telah mendarat dengan baik. Trims sellernya. Produk original, packing rapi."</p>
+                    
+                    <img src="https://down-id.img.susercontent.com/file/id-11134103-7r98p-lpukadvs5xiw12.webp" class="w-full h-32 object-cover rounded-lg cursor-pointer" onclick="openLightbox('https://down-id.img.susercontent.com/file/id-11134103-7r98p-lpukadvs5xiw12.webp')">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Use -->
+    <section id="howto" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-black mb-4">Cara Pemasangan Mudah</h2>
+                <p class="text-gray-600">3 langkah sederhana untuk mobil terlindungi</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-gray-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto text-3xl mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-3">Bersihkan Area Bumper</h3>
+                    <p class="text-gray-600">Pastikan permukaan bumper bersih dari debu dan minyak. Gunakan alkohol untuk hasil rekat maksimal.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gray-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto text-3xl mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-3">Tempelkan Pelindung</h3>
+                    <p class="text-gray-600">Tempelkan FlexGuard di bagian yang diinginkan. Tekan kuat selama 30 detik untuk perekatan sempurna.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gray-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto text-3xl mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-3">Tunggu 48 Jam</h3>
+                    <p class="text-gray-600">Hindari car wash atau guyuran air selama 2 hari untuk hasil rekat optimal dan tahan lama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Order Section -->
+    <section id="orderSection" class="py-16 bg-gradient-to-br from-gray-900 to-black text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Dapatkan Pelindung Bumper Termurah Sekarang!</h2>
+                <p class="text-gray-300 mb-4 text-lg">Jangan biarkan bumper mobil Anda rusak karena goresan!</p>
+                
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <div class="flex items-center bg-gray-800 py-4 px-6 rounded-xl glass">
+                        <div class="mr-4">
+                            <span class="text-gray-400 line-through">Rp 289.000</span>
+                            <div class="text-3xl font-bold text-[#c0c0c0]">Rp 159.000</div>
+                        </div>
+                        
+                        <div class="bg-red-600 py-1 px-4 rounded-lg">
+                            Hemat <br> Rp 130.000
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gray-800 rounded-2xl p-8 glass">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold">Order FlexGuard Car Strip</h3>
+                    <p class="text-gray-300 mt-2">Isi form untuk segera memesan</p>
+                </div>
+                
+                <!-- OrderOnline Integration -->
+                <div class="ooef rounded-xl bg-white bg-opacity-10 backdrop-blur-lg p-6">
+                    <form class="orderonline-embed-form" data-username="mila" data-product-slug="flexguard-car-strip" data-product-id="689059c987f7a9f9d60e750b" id="oo-embed-form-flexguard-car-strip-5912" data-origin="orderonline">
+                        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                    </form>
+                </div>
+                <script>
+                    if (typeof xLogError != 'function') {
+                        var xLogError = function (error) {
+                            var req = new XMLHttpRequest();
+                            var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                            var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                            req.open('POST', 'https://api.orderonline.id/log', true);
+                            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            req.send(params);
+                        };
+                    }
+                    try {
+                        if (typeof xEmbedScript != 'function') {
+                            var xEmbedScript = function () {
+                                !function(w, d, e, v, id, t, s) {
+                                    if (d.getElementById(id)) return;
+                                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                    s = d.getElementsByTagName(e)[0];
+                                    s.parentNode.insertBefore(t, s);
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                            };
+                        }
+                        if (typeof xEmbedInit != 'function') {
+                            var xEmbedInit = function (w, n) {
+                                if (w.ooe) return;
+                                n = w.ooe = function() {
+                                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                };
+                                if (!w._ooe) w._ooe = n;
+                                n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                            };
+                        }
+                        xEmbedInit(window);
+                        ooe('setup', 'redirect', 'https://mila.orderonline.id');
+                        ooe('init', '5f1a7b8fa9bf807da24d83bb', '689059c987f7a9f9d60e750b', '689059c987f7a9f9d60e750c', 'oo-embed-form-flexguard-car-strip-5912', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+                        if (!window.jQuery) {
+                            !function(w, d, e, v, id, t, s) {
+                                if (d.getElementById(id)) return;
+                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                t.addEventListener('load', xEmbedScript);
+                                s = d.getElementsByTagName(e)[0];
+                                s.parentNode.insertBefore(t, s);
+                            }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                        } else {
+                            xEmbedScript();
+                        }
+                    } catch (e) {
+                        xLogError(e);
+                        throw e;
+                    }
+                </script>
+                <!-- End OrderOnline Embed Code -->
+                
+                <div class="mt-8 text-center">
+                    <div class="flex flex-wrap justify-center gap-6 mt-4">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Garansi 1 Tahun</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Pengiriman Cepat</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Original Produk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-black mb-4">Pertanyaan Umum</h2>
+                <p class="text-gray-600">Semua yang perlu Anda tahu tentang FlexGuard</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-xl p-6 mb-4 shadow-sm glass">
+                    <h3 class="text-lg font-bold mb-2 flex items-center">
+                        <span class="bg-[#c0c0c0] w-6 h-6 rounded-full text-white flex items-center justify-center mr-3">Q</span>
+                        Apakah FlexGuard cocok untuk semua jenis mobil?
+                    </h3>
+                    <p class="text-gray-700 pl-9">Ya, produk kami didesain universal sehingga cocok untuk semua jenis mobil mulai dari sedan, SUV, MPV hingga hatchback. Dengan material fleksibel, FlexGuard akan menyesuaikan dengan kontur bumper mobil Anda secara sempurna.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 mb-4 shadow-sm glass">
+                    <h3 class="text-lg font-bold mb-2 flex items-center">
+                        <span class="bg-[#c0c0c0] w-6 h-6 rounded-full text-white flex items-center justify-center mr-3">Q</span>
+                        Berapa lama daya rekat FlexGuard bertahan?
+                    </h3>
+                    <p class="text-gray-700 pl-9">Dengan perawatan yang tepat, FlexGuard dapat bertahan hingga 3 tahun. Kami memberikan garansi 1 tahun untuk produk ini. Pastikan Anda memasangnya sesuai instruksi dan menghindari terkena air langsung selama 48 jam pertama pemasangan.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 mb-4 shadow-sm glass">
+                    <h3 class="text-lg font-bold mb-2 flex items-center">
+                        <span class="bg-[#c0c0c0] w-6 h-6 rounded-full text-white flex items-center justify-center mr-3">Q</span>
+                        Apakah FlexGuard mudah copot saat mobil dicuci?
+                    </h3>
+                    <p class="text-gray-700 pl-9">Setelah masa 48 jam perekatan sempurna, FlexGuard akan mampu bertahan pada pencucian mobil normal maupun automatic car wash. Meskipun demikian, kami selalu menyarankan untuk membersihkan dengan tekanan air sedang.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 mb-4 shadow-sm glass">
+                    <h3 class="text-lg font-bold mb-2 flex items-center">
+                        <span class="bg-[#c0c0c0] w-6 h-6 rounded-full text-white flex items-center justify-center mr-3">Q</span>
+                        Apakah FlexGuard tersedia dalam berbagai warna?
+                    </h3>
+                    <p class="text-gray-700 pl-9">Saat ini FlexGuard hanya tersedia dalam warna hitam universal yang cocok dengan semua warna mobil. Warna hitam dipilih karena tidak mudah terlihat kotor dan paling netral untuk semua jenis mobil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://cdn.orderonline.id/uploads/images_5882961754291926599.png" alt="Logo" class="h-12 mb-4">
+                    <p class="text-gray-400 text-sm">Solusi premium perlindungan bumper & body mobil terbaik di Indonesia dengan kualitas terjamin.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Produk</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-[#c0c0c0] transition">Pelindung Bumper</a></li>
+                        <li><a href="#" class="hover:text-[#c0c0c0] transition">Aksesoris Mobil</a></li>
+                        <li><a href="#" class="hover:text-[#c0c0c0] transition">Produk Lainnya</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Perusahaan</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-[#c0c0c0] transition">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-[#c0c0c0] transition">Karir</a></li>
+                        <li><a href="#" class="hover:text-[#c0c0c0] transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-[#c0c0c0] transition">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Dapatkan promo dan info produk terbaru</p>
+                    <div class="flex mb-4">
+                        <input type="email" placeholder="Email Anda" class="bg-gray-800 px-4 py-2 w-full rounded-l-lg focus:outline-none">
+                        <button class="bg-[#c0c0c0] text-black px-4 py-2 rounded-r-lg font-semibold hover:bg-gray-300 transition">Daftar</button>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400 text-sm">© 2023 FlexGuard Indonesia. Hak Cipta Dilindungi. | Kebijakan Privasi | Syarat & Ketentuan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=6281234567890&text=Saya%20ingin%20beli%20FlexGuard%20Car%20Strip" 
+        target="_blank"
+        class="fixed right-6 bottom-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-40"
+        style="display: flex; align-items: center; justify-content: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Lightbox functionality
+        function openLightbox(src) {
+            document.getElementById('lightbox').style.display = "block";
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-img').style.display = "block";
+            document.getElementById('lightbox-video').style.display = "none";
+        }
+        
+        function openVideo(videoUrl) {
+            document.getElementById('lightbox').style.display = "block";
+            document.getElementById('lightbox-video').src = videoUrl;
+            document.getElementById('lightbox-video').style.display = "block";
+            document.getElementById('lightbox-img').style.display = "none";
+            document.getElementById('lightbox-video').play();
+        }
+        
+        document.getElementsByClassName("close")[0].onclick = function() {
+            document.getElementById('lightbox').style.display = "none";
+            document.getElementById('lightbox-video').pause();
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('lightbox')) {
+                document.getElementById('lightbox').style.display = "none";
+                document.getElementById('lightbox-video').pause();
+            }
+        }
+        
+        // Social Proof Notification
+        const customerNames = ['Vina', 'Dina', 'Kartika', 'Lestari', 'Putri', 'Maya Sari', 'Rani', 'Permata', 'Lestari F'];
+        const customerCities = ['Jakarta', 'Surabaya', 'Bandung', 'Medan', 'Bekasi', 'Tangerang', 'Depok', 'Semarang'];
+        
+        function showSocialProof() {
+            const name = customerNames[Math.floor(Math.random() * customerNames.length)];
+            const city = customerCities[Math.floor(Math.random() * customerCities.length)];
+            const minutesAgo = Math.floor(Math.random() * 15) + 1;
+            
+            document.getElementById('customerAvatar').innerText = name.charAt(0);
+            document.getElementById('customerMessage').innerText = `${name} dari ${city} baru saja memesan FlexGuard Car Strip`;
+            document.getElementById('customerTime').innerText = `${minutesAgo} menit`;
+            
+            const popup = document.getElementById('socialProof');
+            popup.classList.remove('hidden');
+            popup.classList.add('animate-slideInRight');
+            
+            setTimeout(() => {
+                popup.classList.add('hidden');
+                popup.classList.remove('animate-slideInRight');
+            }, 5000);
+        }
+        
+        // Show first notification after 3s and every 8s thereafter
+        setTimeout(() => {
+            showSocialProof();
+            setInterval(showSocialProof, 8000);
+        }, 3000);
+        
+        // Pause social proof notification on hover
+        document.getElementById('socialProof').addEventListener('mouseenter', function() {
+            clearTimeout(this.timeout);
+        });
+        
+        document.getElementById('socialProof').addEventListener('mouseleave', function() {
+            const popup = this;
+            this.timeout = setTimeout(function() {
+                popup.classList.add('hidden');
+            }, 2000);
+        });
+        
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
